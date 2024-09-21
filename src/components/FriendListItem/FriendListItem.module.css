@@ -1,0 +1,19 @@
+.friend_item__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.friend_item__name {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+}
+.friend_item__offline {
+  font-size: 18px;
+  color: red;
+}
+.friend_item__online {
+  font-size: 18px;
+  color: green;
+}
