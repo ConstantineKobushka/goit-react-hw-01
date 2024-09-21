@@ -1,0 +1,23 @@
+.transaction_tabel {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.transaction_thead {
+  background-color: #212121;
+  color: #fafafa;
+  font-size: 24px;
+}
+.transaction_th {
+  padding: 10px;
+}
+.transaction_tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+.transaction_td {
+  padding: 10px;
+  font-size: 22px;
+  width: calc(100% / 3);
+}
