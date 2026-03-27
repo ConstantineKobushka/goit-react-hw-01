@@ -1,17 +1,14 @@
 import styles from './FriendListItem.module.css';
 
-function FriendListItem({ avatar, name, isOnline }) {
+const FriendListItem = ({ avatar, name, isOnline }) => {
+  const className = isOnline ? styles.online : styles.offline;
   return (
-    <div className={styles.friend_item__box}>
-      <img src={avatar} alt={name} width='48' />
-      <p className={styles.friend_item__name}>{name}</p>
-      {isOnline ? (
-        <p className={styles.friend_item__online}>Online</p>
-      ) : (
-        <p className={styles.friend_item__offline}>Offline</p>
-      )}
-    </div>
+    <li className={styles.item}>
+      <img className={styles.img} src={avatar} alt={name} width="48" />
+      <p className={styles.text}>{name}</p>
+      <p className={className}>{isOnline ? 'Online' : 'Offline'}</p>
+    </li>
   );
-}
+};
 
 export default FriendListItem;

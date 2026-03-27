@@ -1,4 +1,4 @@
-.profile_container {
+.container {
   max-width: 520px;
   padding: 20px 0 0 0;
   margin: 25px auto 0 auto;
@@ -7,32 +7,30 @@
   border-radius: 15px;
   overflow: hidden;
 }
-.profile_img__box {
-}
-.profile_img {
+.img {
   width: 250px;
   margin: 0 auto;
   border-radius: 50%;
   background-color: #2a2a2a;
   margin-bottom: 40px;
 }
-.profile_name {
+.name {
   font-size: 52px;
   font-weight: 700;
   margin-bottom: 30px;
   color: #000;
 }
-.profile_nikname,
-.profile_location {
+.nikname,
+.location {
   font-size: 28px;
   margin-bottom: 15px;
   color: #808080;
 }
-.profile_list {
+.list {
   display: flex;
   justify-content: center;
 }
-.profile_item {
+.item {
   display: flex;
   flex-direction: column;
   width: calc(100% / 3);
@@ -43,9 +41,9 @@
   border-right: 3px solid #808080;
   background-color: #d3d3d3;
 }
-.profile_item:last-child {
+.item:last-child {
   border-right: none;
 }
-.profile_item__value {
+.itemValue {
   font-weight: 700;
 }

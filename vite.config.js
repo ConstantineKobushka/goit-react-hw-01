@@ -1,10 +1,14 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
+import react, { reactCompilerPreset } from '@vitejs/plugin-react';
+import babel from '@rolldown/plugin-babel';
 
-// https://vitejs.dev/config/
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
   build: {
     sourcemap: true,
+  },
+  server: {
+    host: '0.0.0.0',
   },
 });

@@ -1,19 +1,23 @@
-.friend_item__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+.item {
+  width: calc((100% - 96px) / 5);
+  padding: 10px;
+  border: 3px solid #212121;
+  border-radius: 10px;
 }
-.friend_item__name {
+.img {
+  margin: 0 auto 20px;
+}
+.text {
   color: #000;
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
-.friend_item__offline {
-  font-size: 18px;
-  color: red;
-}
-.friend_item__online {
+.online {
   font-size: 18px;
   color: green;
+}
+.offline {
+  font-size: 18px;
+  color: red;
 }
